@@ -1,0 +1,163 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>37th Himalaya-Karakoram-Tibet Workshop</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <style>
+      .modal {
+        display: none; 
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.4); /* Sfondo semi-trasparente */
+      }
+      .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        max-width: 400px;
+        position: relative;
+        text-align: center;
+      }
+      .modal-close {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        padding: 5px 10px;
+        background-color: #007BFF;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+    </style>
+</head>
+<body style="background-image: url('images/foto per sito/DSCN1538 copia.JPG');">
+    <header class="banner">
+        <div class="banner-content">
+            <div class="banner-text">
+                <h1>37<span class="small-text">th</span> Himalaya-Karakoram-Tibet Workshop</h1>
+                <p><strong>Torino, Italy</strong> 2nd - 4th September 2025</p>
+            </div>
+            <div class="banner-logo">
+                <img src="images/loghi/LogoCONGRESSO.png" alt="Logo 1">
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="page2.html">Program</a></li>
+            <li><a href="page3.html">Registration</a></li>
+            <li><a href="page4.html">Abstracts</a></li>
+            <li><a href="page5.html">Venue</a></li>
+            <li><a href="page6.html">Field Trip</a></li>
+        </ul>
+    </nav>
+    <div class="content-container">
+        <p><strong>Registration Fees</strong></p>
+        <p class="spaced-paragraph"></p>
+        <table border="1" class="registration-table">
+            <tr>
+                <th></th>
+                <th>Regular / Academic</th>
+                <th>Industrial</th>
+                <th>Student / PhD / Accompanying persons</th>
+            </tr>
+            <tr>
+                <td>Early Bird</td>
+                <td>400&euro;</td>
+                <td>430&euro;</td>
+                <td>300&euro;</td>
+            </tr>
+            <tr>
+                <td>Late</td>
+                <td>450&euro;</td>
+                <td>480&euro;</td>
+                <td>330&euro;</td>
+            </tr>
+            <tr>
+                <td>Onsite</td>
+                <td>470&euro;</td>
+                <td>500&euro;</td>
+                <td>350&euro;</td>
+            </tr>
+            <tr>
+                <td>Daily</td>
+                <td>150&euro;</td>
+                <td>170&euro;</td>
+                <td>120&euro;</td>
+            </tr>
+            <tr>
+                <td>Social Dinner</td>
+                <td>55&euro;</td>
+                <td>55&euro;</td>
+                <td>55&euro;</td>
+            </tr>
+            <tr class="highlight-row">
+                <td>Field Trip</td>
+                <td>320&euro;</td>
+                <td>320&euro;</td>
+                <td>320&euro;</td>
+            </tr>
+            <tr class="highlight-row">
+                <td>Short Course</td>
+                <td>/</td>
+                <td>/</td>
+                <td>25&euro;</td>
+            </tr>
+        </table>
+        <p class="spaced-paragraph"></p>
+        <a href="#" class="button-link" id="registerButton">Register Now</a>
+        
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <button class="modal-close" id="closeModal">Close</button>
+            <p>Registration form will be available soon</p>
+          </div>
+        </div>
+
+        <script>
+          document.getElementById("registerButton").addEventListener("click", function(event) {
+            event.preventDefault();
+            document.getElementById("myModal").style.display = "block";
+          });
+          // Al click sul bottone "Close", nasconde la modal
+          document.getElementById("closeModal").addEventListener("click", function() {
+            document.getElementById("myModal").style.display = "none";
+          });
+        </script>
+
+        <p class="spaced-paragraph">A <strong>limited number of fellowships</strong> will be available for students, PhD students, and ECR from low-income countries.</p>
+        <p>Applications should be sent before 30th April to <strong><span style="color: blue;">geologia.himalayana@unito.it</span></strong> including:</p>
+        <ul>
+            <li>Status certification</li>
+            <li>Curriculum vitae</li>
+            <li>Motivation letter</li>
+        </ul>
+    </div>
+
+    <footer class="footer">
+        <p style="text-align: center;">37th HKT Workshop is supported by:</p> 
+        <div class="image-container">
+            <img src="images/loghi/GIGS-fotor-bg-remover-20250224175414.png" alt="Logo 2">
+            <img src="images/loghi/IASGT_Logo_FINAL-fotor-bg-remover-20250224175927.png" alt="Logo 3">
+            <img src="images/loghi/Logo_DST_UNITO_Col_CS.png" alt="Logo 4">
+            <img src="images/loghi/PETROLAB DEFINITIVO_page-0001-fotor-bg-remover-202502241819.png" alt="Logo 6">
+            <img src="images/loghi/Sezione himalayana-fotor-bg-remover-2025022418142.png" alt="Logo 7">
+            <img src="images/loghi/SGI_1_CMYK_page-0001-fotor-bg-remover-20250224175513.png" alt="Logo 8">
+            <img src="images/loghi/_logoSIMP_300dpi_def1.png" alt="Logo 9">
+        </div>
+        <p>&copy; 2025 37th Himalaya-Karakoram-Tibet Workshop. All rights reserved.</p>
+    </footer>
+</body>
+</html>

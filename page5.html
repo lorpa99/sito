@@ -1,0 +1,88 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>37th Himalaya-Karakoram-Tibet Workshop</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwDk77JU5mPQXXh6b9Hw3GWMv_4M5opEA&callback=initMap" async defer></script>
+    <script>
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 12,
+                center: {lat: 45.0703, lng: 7.6869} 
+            });
+
+            var locations = [
+                {lat: 45.052582, lng: 7.681726, title: 'Microtectonics workshop', url: 'https://maps.app.goo.gl/KieQo3HEjHKDkR7bA'},
+                {lat: 45.06424342297686, lng: 7.68756760792834, title: 'Icebreaker party', url: 'https://maps.app.goo.gl/Xj1QKRuFLq2s2q6h6'},
+                {lat: 45.06524775607218, lng: 7.688591249012507, title: 'Main workshop', url: 'https://maps.app.goo.gl/XQcwPraxDJ4uUVQaA'},
+                {lat: 45.06000636455733, lng: 7.697279717270802, title: 'Social Dinner', url: 'https://maps.app.goo.gl/P9Ju1cGreyFaT6NZA'}
+            ];
+
+            locations.forEach(function(location) {
+                var marker = new google.maps.Marker({
+                    position: {lat: location.lat, lng: location.lng},
+                    map: map,
+                    title: location.title
+                });
+
+                marker.addListener('click', function() {
+                    window.open(location.url, '_blank');
+                });
+            });
+        }
+    </script>
+</head>
+<body style="background-image: url('images/foto per sito/prayer\ flag\ copia.JPG');">
+    <header class="banner">
+        <div class="banner-content">
+            <div class="banner-text">
+                <h1>37<span class="small-text">th</span> Himalaya-Karakoram-Tibet Workshop</h1>
+                <p><strong>Torino, Italy</strong>  2nd - 4th September 2025</p>
+            </div>
+            <div class="banner-logo">
+                <img src="images/loghi/LogoCONGRESSO.png" alt="Logo 1">
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="page2.html">Program</a></li>
+            <li><a href="page3.html">Registration</a></li>
+            <li><a href="page4.html">Abstracts</a></li>
+            <li><a href="page5.html">Venue</a></li>
+            <li><a href="page6.html">Field Trip</a></li>
+        </ul>
+    </nav>
+    <div class="content-container">
+        <p>The main city of Torino (Italy) is easy reached, via public transport (train and bus), from both Torino airport (Caselle Airport) and Milan (Malpensa and Linate airports) International Airports. Torino can be also reached from Bologna (Guglielmo Marconi Airport) and Rome (Fiumicino Airport) connected by high-speed trains (Trenitalia: <a href="http://www.trenitalia.com/">http://www.trenitalia.com/</a> and Italo: <a href="http://www.italotreno.it/">http://www.italotreno.it/</a>trains). The locations of all the 37HKT related events are within the center of Turin city, easily reached by public transport (<a href="https://www.gtt.to.it/cms/en/">https://www.gtt.to.it/cms/en/</a>) or by walking.</p>
+        <p class="spaced-paragraph"><u>Short course (1st September)</u></p>
+        <p>The short course “<i>Microtectonics of Himalayan rocks: a tale of beauty</i>” will be held in the <strong>Pognante classroom</strong> at (ground floor of) Earth Sciences Department (University of Turin), via Valperga Caluso, 35 (link google maps: <a href="https://maps.app.goo.gl/KieQo3HEjHKDkR7bA">https://maps.app.goo.gl/KieQo3HEjHKDkR7bA</a>).</p>
+        <p class="spaced-paragraph"><u>Icebreaker party (1st September)</u></p>
+        <p>The Icebreaker will be organized at <strong>Museo Regionale di Scienze Naturali</strong> (MRSN – <a href="https://mrsntorino.it/en/">https://mrsntorino.it/en/</a>) located in via Academia Albertina 15 (link google maps: <a href="https://maps.app.goo.gl/Xj1QKRuFLq2s2q6h6">https://maps.app.goo.gl/Xj1QKRuFLq2s2q6h6</a>) at 18 pm. Pre-registration will be on site.</p>
+        <p class="spaced-paragraph"><u>Main workshop (2nd-4th September)</u></p>
+        <p>The 37th HKT workshop will be held in the <strong>Aula Magna</strong> at <i>Department of Life Science and System Biology</i> (DBios) of University of Turin, via Academia Albertina 13 (link google maps: <a href="https://maps.app.goo.gl/XQcwPraxDJ4uUVQaA">https://maps.app.goo.gl/XQcwPraxDJ4uUVQaA</a>).</p>
+        <p class="spaced-paragraph"><u>Social Dinner (3rd September)</u></p>
+        <p>The social dinner will be held at the Restaurant “Al Monte dei Cappuccini” (link google maps: <a href="https://maps.app.goo.gl/P9Ju1cGreyFaT6NZA">https://maps.app.goo.gl/P9Ju1cGreyFaT6NZA</a>), located on the top of a hill, within the city of Turin, just on the right side of the Po River. The menu is based on the typical Piémontaise cuisine, including tastings of wines. In case of special requirements (vegetarian/vegan; allergies), just specify during the registration.</p>
+        <!-- Google Maps -->
+        <div id="map" class="map-container"></div>
+    </div>
+
+    <footer class="footer">
+        <p style="text-align: center;">37th HKT Workshop is supported by:</p>
+        <div class="image-container">
+            <img src="images/loghi/GIGS-fotor-bg-remover-20250224175414.png" alt="Logo 2" class="footer-logo">
+            <img src="images/loghi/IASGT_Logo_FINAL-fotor-bg-remover-20250224175927.png" alt="Logo 3" class="footer-logo">
+            <img src="images/loghi/Logo_DST_UNITO_Col_CS.png" alt="Logo 4" class="footer-logo">
+            <img src="images/loghi/PETROLAB DEFINITIVO_page-0001-fotor-bg-remover-202502241819.png" alt="Logo 6" class="footer-logo">
+            <img src="images/loghi/Sezione himalayana-fotor-bg-remover-2025022418142.png" alt="Logo 7" class="footer-logo">
+            <img src="images/loghi/SGI_1_CMYK_page-0001-fotor-bg-remover-20250224175513.png" alt="Logo 8" class="footer-logo">
+            <img src="images/loghi/_logoSIMP_300dpi_def1.png" alt="Logo 9" class="footer-logo">
+        </div>
+        <p>&copy; 2025 37th Himalaya-Karakoram-Tibet Workshop. All rights reserved.</p>
+    </footer>
+</body> 
+</html>
